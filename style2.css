@@ -1,0 +1,184 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100;
+}
+.logo{
+  justify-self: center;
+  margin: 0;
+}
+.navbar{
+   display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-top: 20vh;
+    gap: 0;
+}
+.nav-left{
+    justify-self: end;
+    display: flex;
+    gap: 40px;
+    margin-left: 10%;
+    font-family: NeonSchrift,Copperplate, Papyrus, fantasy;
+    font-size: clamp(16px, 2vw, 30px);
+}
+.nav-right{
+    justify-self: start;
+    display: flex;
+    gap: 40px;
+    margin-right: 10%;
+    font-family: NeonSchrift,Copperplate, Papyrus, fantasy;
+    font-size: clamp(16px, 2vw, 30px);
+}
+.logo img{
+    max-height: clamp(150px, 30vw, 500px);
+    width: auto
+}
+.nav-left a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease, transform 0.2 ease;
+}
+.nav-left a:hover{
+  animation: neonPulse 2s infinite alternate;
+}
+.nav-left a:active{
+    transform: scale(0.98)
+}
+.nav-right a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease, transform 0.2 ease;
+}
+.nav-right a:hover{
+    animation: neonPulse 2s infinite alternate
+}
+.nav-right a:active{
+    transform: scale(0.98)
+}
+.logo-s{
+  justify-self: center;
+  margin: 0;
+}
+.navbar-s{
+   display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 8px 0;
+}
+.nav-left-s{
+    justify-self: start;
+    display: flex;
+    gap: 30%;
+    margin-left: 30%;
+    margin-right: 10%;
+    font-family: NeonSchrift,Copperplate, Papyrus, fantasy;
+    font-size: 30px;
+}
+.nav-right-s{
+    justify-self: end;
+    display: flex;
+    gap: 30%;
+    margin-right: 30%;
+    font-family: NeonSchrift,Copperplate, Papyrus, fantasy;
+    font-size: 30px;
+}
+.logo-s img{
+    max-height: 200px;
+    width: auto;
+    max-height: clamp(60px, 10vw, 120px);
+}
+.nav-left-s a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+.nav-left-s a:hover{
+    animation: neonPulse 1s infinite alternate;
+}
+.nav-left-s a:active{
+    transform: scale(0.98)
+}
+.nav-right-s a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease,transform 0.2s ease;
+}
+.nav-right-s a:hover{
+    animation: neonPulse 0.5s infinite alternate;
+}
+.nav-right-s a:active{
+    transform: scale(0.98)
+}
+hr{
+    color: white;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.neon-text{
+    color: black;
+    text-shadow:
+    0 0 5px #afab91,
+    0 0 10px #e7ffd7,
+    0 0 20px #eaffc1,
+    0 0 40px #d8febe,
+    0 0 80px #ffffde;
+    font-family: NeonSchrift;
+    font-size: 300px;
+}
+.neonbody{
+    margin: 50px;
+    background: #0f172a;
+    color: white;
+}
+@font-face {
+    font-family: "NeonSchrift";
+    src: url("fonts/Library\ 3\ am.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+.section{
+    border-radius: 8px;
+    width:300px;
+    height: 100px;
+    background: black;
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.078);
+    margin: 40px 0px 20px 40px;
+}
+.label{
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: .5;
+    margin-bottom: 20px;
+}
+.text{
+    font-size: 24px;
+    font-weight:700;
+    font-family: NeonSchrift
+}
+/*NeonAnimation*/
+.neon:hover{
+    color: white;
+    animation: neonPulse 1s infinite alternate;
+}
+@keyframes neonPulse{
+    0%{
+        text-shadow: 0 0 5px white, 0 0 10px white;
+    }
+    100%{
+        text-shadow: 0 0 10px white, 0 0 30px white, 0 0 60px white;
+    }
+}
